@@ -1,4 +1,4 @@
-var reddit = require('./../common/reddit.js'),
+var reddit = require.once(rootPathJoin('core/common/reddit.js')),
     request = require.safe('request'),
     results = [];
 
