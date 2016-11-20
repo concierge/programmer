@@ -1,5 +1,5 @@
 var reddit = require('./../common/reddit.js'),
-    request = require.safe('request'),
+    request = require('request'),
     results = [];
 
 exports.reaction = function(callback, waitCallback) {
