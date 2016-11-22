@@ -1,4 +1,4 @@
-var reddit = require.once('concierge/reddit'),
+var reddit = require('concierge/reddit'),
     request = require('request'),
     results = [];
 
