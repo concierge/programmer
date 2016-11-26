@@ -1,4 +1,4 @@
-var reddit = require('./../common/reddit.js'),
+var reddit = require('concierge/reddit'),
     request = require('request'),
     results = [];
 
@@ -28,7 +28,7 @@ exports.getReaction = function(callback) {
         title = results[index].data.title,
         text = results[index].data.selftext,
 		url = results[index].data.url;
-		
+
     // Delete the reaction, so we don't get it again
     results.splice(index, 1);
 
